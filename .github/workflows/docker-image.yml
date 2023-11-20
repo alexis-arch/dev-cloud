@@ -12,4 +12,4 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build the Docker image
-      run: docker build ./node-backend --file ./node-backend/Dockerfile --tag node-backend:${date +%s}
+      run: docker build ./node-backend --file ./node-backend/Dockerfile --tag node-backend:$(date +%s)
